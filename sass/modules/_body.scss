@@ -1,0 +1,148 @@
+
+//hero start
+.hero-vid video {
+    max-width: 100%;
+    max-height: 100%;
+}
+//hero ends
+
+//price preview start
+.page1 p {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-size: 3vmax;
+    margin-top: 2em;
+}
+.page1 img {
+    width: 35vmax;
+    margin-top: 2em;
+}
+
+.preview {
+
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+}
+
+.preview-text {
+   margin-top: 8em;
+   margin-left: 3em;
+   font-family: 'Libre Baskerville', serif;
+
+}
+.preview-text h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.preview-text h3 {
+    font-size: 20px;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+.preview-text h4 {
+    font-size: 17px;
+    margin-top: 2em;
+    text-align: center;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color: #C3a569;
+    transition: .5s;
+}
+.button {
+    background-color: #8E733B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2em;
+    margin-left: 5vmax;
+
+}
+//price preview ends
+
+//ajax start
+#ajax-head{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 2em;
+    font-size: 2em;
+}
+.diu {
+    max-width: 100%;
+    margin-top: 3em;
+}
+
+
+.characters{
+    margin-top: 2em;
+    margin-left: 15vmax;
+}
+.characters img {
+    width: 15vmax;
+    transition: .5s;
+    transition: ease-in-out .5s;
+}
+.characters img:hover {
+    cursor: pointer;
+    width: 17vmax;
+    transition: .5s;
+    transition: ease-in-out .5s;
+}
+
+#character-nav {
+    background-image:url("/images/") ;
+}
+
+//ajax ends
+
+//gallery starts
+.gal {
+
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+
+
+}
+
+.gal img {
+    width: 80%;
+    margin-left: 3vmax;
+}
+//gallery ends 
+
+//mobil starts
+
+@media screen and (min-width: 30em) and (max-width: 63.98em) {
+    .preview {
+
+        display: grid;
+        grid-column: 2 / span 2;
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: 3em;
+    }
+    .preview-text  {
+        margin-top: 2em;
+        margin-right: 3em;
+        font-family: 'Libre Baskerville', serif;
+     
+     }
+     button {
+        margin-right: 3em;
+     }
+}
+
+//mobile ends
