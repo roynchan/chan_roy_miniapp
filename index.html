@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Official Hompage | MINI Canada</title>
+</head>
+<body>
+ <header>
+         <!-- Mobile Menu -->
+         <div class="mobile tablet">
+            <input type="checkbox" id="overlay-input"/>
+            <label for="overlay-input" id="overlay-button"><span></span></label>
+            <div id="overlay">
+                <ul>
+                    <li><a class="active" href="#">ELETRIC</a></li>
+                    <li><a href="#">3 DOOR</a></li>
+                    <li><a href="#">5 DOOR</a></li>
+                    <li><a href="#">COUNTRYMAN</a></li>
+                    <li><a href="#">CONVERTBLE</a></li>
+                    <li><a href="#">JCW</a></li>
+                    <li><a href="#">Shop Now</a></li>
+                    <li><a href="#">Build & Price</a></li>
+                </ul>
+            </div>
+            </div>
+            <!-- End Mobile Menu -->
+
+            <!--Start Web Menu-->
+        <div class="logo"><a href="index.html"><img src="images/logo.png" class="center" alt="logo img"></a></div><br>
+        <nav class="nav " aria-label="Main Navigation">
+            <h2 class="hidden ">Main Navigation</h2>
+            <ul class="border-logotop margin-bottom">
+                <li><a href="#ajax-head">ELETRIC</a></li>
+                <li><a class="active" href="#ajax-head">3 DOOR</a></li>
+                <li><a href="#ajax-head">5 DOOR</a></li>
+                <li><a href="#ajax-head">COUNTRYMAN</a></li>
+                <li><a href="#ajax-head">CONVERTBLE</a></li>
+                <li><a href="#ajax-head">JCW</a></li>
+            </ul>
+            <div class="navIcon">
+            <ul>
+                <li><a href="#"><img src="images/cart.svg" alt="cart img"></a></li>
+                <li><a href="#">Shop Now</a></li>
+                <li><a href="#"><img src="images/car.svg" alt="car img"></a></li>
+                <li><a href="#">Build & Price</a></li>
+            </ul>
+            </div>
+        </nav>
+
+    </header>
+     <!--End Web Menu-->
+
+    <!--Start Hero-->
+    <section class="hero">
+    <h1 class="hidden">Hero</h1>
+    <div class="hero-vid">
+    <video loop autoplay >
+        <source src="images/videoplayback.mp4" >
+    </video>
+    </div>
+    </section>  
+    <!--End Hero-->
+
+    <!--Start Price Preview-->
+    <section class="page1 center">
+        <h1 class="hidden">preview</h1>
+        <p>THE DEAL <br> YOU'RE LOOKING FOR</p>
+        <div class="preview">
+        <img src="images/mini.jpg" alt="mini cooper imgae">
+        <div class="preview-text">
+        <h2>THE 2023 MINI COOPER SE 3 DOOR</h2>
+        <h3>Starting from: $31,090</h3>
+        <h4>60 month</h4>
+        <a class="button" href="#ajax-head">SEE MORE</a>
+        </div>
+        </div>
+        
+    </section>
+    <!--End Price Preview-->
+    
+    <!--Start Ajax Fetching Content-->
+    <img class="diu" src="images/miniBanner.jpg" alt="banner ads">
+
+    <h1 class="hidden">Ajax fetching</h1>
+    <h2 id="ajax-head">SELECT A MODEL TO SEE MORE</h2>
+
+        <main id="app">
+     
+           <nav id="character-nav">
+               <ul class="characters">
+                   <!-- prof thumb component goes here -->
+                   <projectthumbnail @loadlb="loadlighbox" v-for="project in projectData" :project="project"></projectthumbnail>
+       
+               </ul>
+           </nav>
+                  <!-- lightbox can go here-->
+                  <lightbox @closeLB="this.showLB = false" v-if="showLB" :project="lightboxdata"></lightbox>
+                  <!--lighbox end-->
+       </main>
+       <!--End Ajax Fetching Content-->
+
+       <!--Start Garllery-->
+    <section class="page1">
+        <h1 class="hidden">GALLERY</h1>
+        <p>GALLERY</p>
+        <div class="gal">
+        <img src="images/gal1.jpg" alt="mini ads image">
+        <img src="images/inner_mini.jpg" alt="mini ads image">
+        <img src="images/gal.jpg" alt="mini ads image">
+        </div>
+        
+    </section>
+         <!--End Garllery-->
+
+     <!--Start Footer-->
+    <footer class="sticky_footer">
+        <div class="social_icons"> 
+         <a href="https://www.instagram.com/minicanada/?hl=en" target="_blank"><img src="images/social_icons/instagram_icon.png" alt="ig icons"></a>
+         <a href="https://www.facebook.com/MINI.canada/" target="_blank"><img src="images/social_icons/facebook_icon.png" alt="fb icon"></a>
+         <a href="https://www.youtube.com/@MINI" target="_blank"><img src="images/social_icons/youtube.png" alt="youtube icon"></a>
+         <a href="https://twitter.com/MINI?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/social_icons/twitter.png" alt="twitter icon"></a>
+        </div>
+     
+        <ul >
+         <li><a href="#"> Contact Us</a></li>
+         <li><a href="#"> Cookies & Ads</a></li>
+         <li><a href="#"> Privacy Policy</a></li>
+         <li><a href="#"> Terms Of Use</a></li>
+        </ul>
+     
+        <p>2022 MINI Canada.</p>
+     </footer>
+ <!--End Garllery-->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" ></script>
+     <script src="js/main.js" type="module" defer></script>
+
+</body>
+</html>
