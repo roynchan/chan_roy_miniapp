@@ -1,0 +1,113 @@
+header{
+    position: sticky;
+    top: 0em;
+    background-color: #ffff;
+    border-bottom: 1 solid #e6e6e6;
+    box-shadow: 0px 5px 8px #888;
+    font-family: 'Quicksand', sans-serif;
+ }
+
+
+
+ .logo img{padding: 1em;
+ width: 8%;
+ align-items: center;
+ }
+ .logo img:hover {
+    cursor: pointer;
+ }
+
+ .nav {grid-column: -4/ span 2;
+ position: relative;
+ margin-left: 23.5vmax;
+}
+
+ nav ul {
+
+    text-decoration: none;
+    text-align: start;
+    font-size:20px;
+ }
+
+ nav li {
+    display: inline;
+    margin-right: 2em;
+    
+ }
+ nav li:last-child {
+    margin-right: 0em;
+ }
+
+ nav li a {
+
+    color: #626262;
+    font-size: inherit;
+    text-decoration: none;
+ }
+ nav li a:hover{
+    color: #a88c6f;
+    -webkit-transition: color 500ms linear;
+       -ms-transition: color 500ms linear;
+       transition: color 500ms linear;
+ }
+
+ nav li a.active {
+    color: #a88c6f;
+ }
+
+ nav li h3 {
+    display: inline;
+    padding: 1.5em 1.5em 1.6em ;
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 1em;
+    -webkit-transition: background-color 500ms linear;
+       -ms-transition: background-color 500ms linear;
+       transition: background-color 500ms linear;
+ }
+ 
+ nav li h3:hover {
+    background-color: #626262;
+    -webkit-transition: background-color 500ms linear;
+       -ms-transition: background-color 500ms linear;
+       transition: background-color 500ms linear;
+ }
+ .navIcon{
+    margin-top: 2em;
+    margin-left: 16vmax;
+
+ }
+ .navIcon li{
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 15px;
+
+ }
+ .navIcon li img{
+    width: 90%;
+ }
+
+ //mobile starts 
+
+ @media screen and (min-width: 64em) {
+    .mobile {
+        display: none;
+    }
+ }
+ @media screen and (min-width: 30em) and (max-width: 63.98em) {
+    .nav{
+        display: none;
+    }
+    .logo img{padding: 1em;
+        width: 20%;
+        display: block;
+    margin-left: 2em;
+    height: auto;
+        
+        }
+        .logo img:hover {
+           cursor: pointer;
+        }
+ }
+
+ // mobile ends
