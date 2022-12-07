@@ -7,7 +7,7 @@ A Mini Copper Website/Application with fetching function
 A Mini Cooper website using SASS, Vue, AJAX
 
 ## Getting Started
-I'm fetching the data from a data.json just for a preview, thats why I also included my database and my table SQL along with all my functional PHP files in the "scripts" and "SQL" folder, by changing the main.js-line12 from ' fetch('data.json') ' to 'fetch('./scripts/json.php') ' will start fetching from the database instead of the data.json
+I'm fetching the data from a data.json just for a preview, thats why I also included my database and my table SQL along with all my functional PHP files in the "scripts" and "SQL" folder, by changing the main.js-line12 from ' fetch('data.json') ' to 'fetch('./scripts/json.php') ' after importing my sql files into a database server will start fetching from the database instead of the data.json
 
 ### How it runs
 
